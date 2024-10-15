@@ -4,23 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"> <!-- Force Left-to-Right direction -->
 
+    <!-- Camera View -->
     <com.snap.camerakit.support.widget.CameraLayout
         android:id="@+id/camera_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true" />
 
+    <!-- Close Button, aligned to the top-right -->
     <ImageButton
         android:id="@+id/close_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|left"
+        android:layout_gravity="top|end" <!-- Aligns to top-right -->
         android:background="@null"
         android:contentDescription="desc"
         android:padding="16dp"
         android:src="@drawable/close"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
+        tools:ignore="HardcodedText" />
+        
 </FrameLayout>
