@@ -24,6 +24,6 @@
         android:contentDescription="desc"
         android:padding="16dp"
         android:src="@drawable/close"
-        tools:ignore="HardcodedText" />
-        
+        tools:ignore="HardcodedText" /> <!-- Proper self-closing tag -->
+
 </FrameLayout>
