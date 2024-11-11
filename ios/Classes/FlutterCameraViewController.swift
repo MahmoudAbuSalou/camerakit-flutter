@@ -76,10 +76,6 @@ open class FlutterCameraViewController: UIViewController, CameraControllerUIDele
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        // Force Left-to-Right layout direction for the main view and subviews
-        view.semanticContentAttribute = .forceLeftToRight 
-        // Force LTR direction for the camera controller's view
-        cameraController.view.semanticContentAttribute = .forceLeftToRight
         setup()
         
         if !isHideCloseButton {
